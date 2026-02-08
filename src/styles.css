@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-primary: #0b3c5d;
+  --color-secondary: #1f8a9d;
+  --color-accent: #2ec4b6;
+  --color-background: #f3f6f8;
+  --color-surface: #ffffff;
+  --color-foreground: #0f172a;
+  --color-muted: #5f7284;
+}
+
+html.dark {
+  color-scheme: dark;
+  --color-primary: #8fbce3;
+  --color-secondary: #4fc3d6;
+  --color-accent: #2ec4b6;
+  --color-background: #0b1217;
+  --color-surface: #121b22;
+  --color-foreground: #e2e8f0;
+  --color-muted: #9fb3c8;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", ui-sans-serif, system-ui;
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.app-gradient {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(31, 138, 157, 0.18),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(46, 196, 182, 0.2),
+      transparent 45%
+    ),
+    linear-gradient(135deg, rgba(11, 60, 93, 0.08), transparent 40%);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+html.dark .glass-panel {
+  background: rgba(18, 27, 34, 0.78);
+  border-color: rgba(148, 163, 184, 0.15);
+}

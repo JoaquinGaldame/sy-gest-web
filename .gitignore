@@ -36,6 +36,7 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+CODEX_MEMORY.md
 
 # System files
 .DS_Store
