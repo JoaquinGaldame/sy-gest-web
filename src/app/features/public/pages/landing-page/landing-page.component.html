@@ -1,0 +1,439 @@
+<app-landing-header (loginRequested)="openLogin()"></app-landing-header>
+
+<!-- Hero Section -->
+<section
+  class="relative overflow-hidden bg-gradient-to-br from-background via-white to-background py-20"
+>
+  <div
+    class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%230B3C5D%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30"
+  ></div>
+
+  <div class="container relative mx-auto px-4">
+    <div class="grid items-center gap-12 lg:grid-cols-2">
+      <!-- Texto Hero -->
+      <div class="space-y-8">
+        <div class="space-y-4">
+          <div
+            class="inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-2"
+          >
+            <i class="pi pi-star-fill text-accent"></i>
+            <span
+              class="text-sm font-semibold uppercase tracking-wider text-accent"
+            >
+              Plataforma Empresarial All-in-One
+            </span>
+          </div>
+
+          <h1
+            class="text-4xl font-bold leading-tight text-gray-900 lg:text-5xl xl:text-6xl"
+          >
+            Transforma tu gestión empresarial con
+            <span class="text-primary">Sy-Gest</span>
+          </h1>
+
+          <p class="text-lg text-gray-600 lg:text-xl">
+            Sistema integral de gestión que unifica inventario, finanzas, RRHH y
+            administración en una sola plataforma inteligente. Diseñado para
+            optimizar operaciones y maximizar la rentabilidad de tu negocio.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+          <button
+            pButton
+            type="button"
+            label="Solicitar Demo Gratis"
+            icon="pi pi-play"
+            class="p-button-raised p-button-lg"
+          >
+            <span class="sr-only">Solicitar Demo Gratis</span>
+          </button>
+          <button
+            pButton
+            type="button"
+            label="Ver Video Tour"
+            icon="pi pi-video"
+            class="p-button-outlined p-button-lg"
+          >
+            <span class="sr-only">Ver Video Tour</span>
+          </button>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-6 pt-8">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary">+500</div>
+            <div class="text-sm text-gray-500">Empresas</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-secondary">99.9%</div>
+            <div class="text-sm text-gray-500">Disponibilidad</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-accent">24/7</div>
+            <div class="text-sm text-gray-500">Soporte</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="relative">
+        <div
+          class="relative rounded-2xl bg-gradient-to-br from-primary to-secondary p-1 shadow-2xl"
+        >
+          <div class="overflow-hidden rounded-xl bg-white">
+            <!-- Placeholder para dashboard screenshot -->
+            <img
+              src="assets/images/Logos/sy-gest-logo-embedded-cropped.svg"
+              alt="Sy-Gest"
+              class="logo-img"
+            />
+          </div>
+
+          <!-- Elementos flotantes -->
+          <div
+            class="absolute -left-6 -top-6 rounded-xl bg-white p-4 shadow-xl"
+          >
+            <i class="pi pi-chart-line text-2xl text-primary"></i>
+          </div>
+          <div
+            class="absolute -right-6 -bottom-6 rounded-xl bg-accent p-4 shadow-xl"
+          >
+            <i class="pi pi-shield text-2xl text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Módulos -->
+<section id="modules" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
+        Módulos <span class="text-primary">Integrados</span>
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
+        Cada módulo trabaja en perfecta sincronía, eliminando silos de
+        información
+      </p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <!-- Módulo 1 -->
+      <div
+        class="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+      >
+        <div class="mb-6 inline-flex rounded-xl bg-primary/10 p-4">
+          <i class="pi pi-box text-3xl text-primary"></i>
+        </div>
+        <h3 class="mb-3 text-xl font-bold text-gray-900">
+          Gestión de Inventario
+        </h3>
+        <p class="mb-6 text-gray-600">
+          Control en tiempo real de stock, pedidos y logística con alertas
+          inteligentes
+        </p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-accent"></i>
+            <span class="text-sm">Trazabilidad completa</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-accent"></i>
+            <span class="text-sm">Órdenes automáticas</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-accent"></i>
+            <span class="text-sm">Reportes de rotación</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Módulo 2 -->
+      <div
+        class="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+      >
+        <div class="mb-6 inline-flex rounded-xl bg-secondary/10 p-4">
+          <i class="pi pi-briefcase text-3xl text-secondary"></i>
+        </div>
+        <h3 class="mb-3 text-xl font-bold text-gray-900">
+          Finanzas y Contabilidad
+        </h3>
+        <p class="mb-6 text-gray-600">
+          Automatización de procesos financieros con integración bancaria
+        </p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-accent"></i>
+            <span class="text-sm">Facturación electrónica</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-accent"></i>
+            <span class="text-sm">Flujo de caja predictivo</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-accent"></i>
+            <span class="text-sm">Conciliación automática</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Módulo 3 -->
+      <div
+        class="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+      >
+        <div class="mb-6 inline-flex rounded-xl bg-accent/10 p-4">
+          <i class="pi pi-users text-3xl text-accent"></i>
+        </div>
+        <h3 class="mb-3 text-xl font-bold text-gray-900">Gestión de Talento</h3>
+        <p class="mb-6 text-gray-600">
+          Administración integral de nómina, reclutamiento y desarrollo
+        </p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-primary"></i>
+            <span class="text-sm">Control de asistencia</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-primary"></i>
+            <span class="text-sm">Evaluación de desempeño</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-primary"></i>
+            <span class="text-sm">Portal del empleado</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Módulo 4 -->
+      <div
+        class="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+      >
+        <div class="mb-6 inline-flex rounded-xl bg-gray-900/10 p-4">
+          <i class="pi pi-chart-bar text-3xl text-gray-900"></i>
+        </div>
+        <h3 class="mb-3 text-xl font-bold text-gray-900">
+          Business Intelligence
+        </h3>
+        <p class="mb-6 text-gray-600">
+          Dashboard interactivo con análisis predictivo y reportes ejecutivos
+        </p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-secondary"></i>
+            <span class="text-sm">KPIs personalizados</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-secondary"></i>
+            <span class="text-sm">Alertas proactivas</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="pi pi-check-circle text-secondary"></i>
+            <span class="text-sm">Exportación multiplataforma</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Características -->
+<section id="features" class="py-20">
+  <div class="container mx-auto px-4">
+    <div class="grid gap-12 lg:grid-cols-2">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
+          Potencia tu negocio con
+          <span class="text-primary">tecnología avanzada</span>
+        </h2>
+        <p class="mt-6 text-lg text-gray-600">
+          Sy-Gest combina las mejores prácticas de gestión con tecnología de
+          punta para ofrecerte una experiencia única.
+        </p>
+
+        <div class="mt-10 space-y-8">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="rounded-xl bg-primary/10 p-3">
+                <i class="pi pi-lock text-xl text-primary"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">
+                Seguridad Enterprise
+              </h3>
+              <p class="mt-2 text-gray-600">
+                Encriptación end-to-end, autenticación multifactor y
+                cumplimiento con estándares internacionales de protección de
+                datos.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="rounded-xl bg-accent/10 p-3">
+                <i class="pi pi-sync text-xl text-accent"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">Integración Total</h3>
+              <p class="mt-2 text-gray-600">
+                Conecta con tus sistemas existentes, APIs abiertas y más de 100
+                aplicaciones empresariales populares.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="rounded-xl bg-secondary/10 p-3">
+                <i class="pi pi-mobile text-xl text-secondary"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">Multiplataforma</h3>
+              <p class="mt-2 text-gray-600">
+                Accede desde cualquier dispositivo con aplicaciones nativas para
+                iOS, Android y experiencia web responsive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="sticky top-24">
+          <div class="overflow-hidden rounded-2xl shadow-2xl">
+            <!-- Placeholder para característica visual -->
+            <div
+              class="aspect-square bg-gradient-to-br from-gray-900 to-primary"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección CTA -->
+<section class="py-20 bg-gradient-to-r from-primary to-secondary">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-white md:text-4xl">
+        ¿Listo para transformar tu empresa?
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-xl text-white/90">
+        Únete a las empresas que ya optimizaron sus operaciones con Sy-Gest
+      </p>
+
+      <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+        <button
+          pButton
+          type="button"
+          label="Solicitar Demo Personalizada"
+          icon="pi pi-calendar"
+          class="p-button-raised p-button-lg bg-white !text-primary hover:bg-gray-100"
+        >
+          <span class="sr-only">Solicitar Demo Personalizada</span>
+        </button>
+        <button
+          pButton
+          type="button"
+          label="Contactar Ventas"
+          icon="pi pi-phone"
+          class="p-button-outlined p-button-lg !border-white !text-white"
+        >
+          <span class="sr-only">Contactar Ventas</span>
+        </button>
+      </div>
+
+      <p class="mt-8 text-white/80">
+        <i class="pi pi-check-circle"></i>
+        <span class="ml-2"
+          >Sin compromiso • Demo de 30 días • Soporte incluido</span
+        >
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid gap-8 md:grid-cols-4">
+      <div>
+        <div class="mb-6 flex items-center gap-2">
+          <div
+            class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary"
+          >
+            <span class="font-bold">SG</span>
+          </div>
+          <div>
+            <div class="text-xl font-bold">Sy-Gest</div>
+            <div class="text-xs text-accent">by SyTech Solutions</div>
+          </div>
+        </div>
+        <p class="text-gray-400">
+          Sistema integral de gestión empresarial para empresas modernas.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="mb-4 text-lg font-bold">Producto</h4>
+        <ul class="space-y-2">
+          <li><a href="#software" class="footer-link">Software</a></li>
+          <li><a href="#modules" class="footer-link">Módulos</a></li>
+          <li><a href="#pricing" class="footer-link">Precios</a></li>
+          <li><a href="#guide" class="footer-link">Guía</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="mb-4 text-lg font-bold">Empresa</h4>
+        <ul class="space-y-2">
+          <li><a href="#about" class="footer-link">Nosotros</a></li>
+          <li><a href="#blog" class="footer-link">Blog</a></li>
+          <li><a href="#careers" class="footer-link">Carreras</a></li>
+          <li><a href="#contact" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="mb-4 text-lg font-bold">Legal</h4>
+        <ul class="space-y-2">
+          <li><a href="#privacy" class="footer-link">Privacidad</a></li>
+          <li><a href="#terms" class="footer-link">Términos</a></li>
+          <li><a href="#security" class="footer-link">Seguridad</a></li>
+          <li><a href="#compliance" class="footer-link">Cumplimiento</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 border-t border-gray-800 pt-8 text-center text-gray-400">
+      <p>&copy; 2024 Sy-Gest. Todos los derechos reservados.</p>
+      <p class="mt-2 text-sm">Sistema de Gestión Empresarial v4.0</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal Login -->
+<p-dialog
+  header="Acceso a Sy-Gest"
+  [(visible)]="loginOpen"
+  [modal]="true"
+  [style]="{ width: '420px' }"
+  [draggable]="false"
+  [resizable]="false"
+  styleClass="login-dialog"
+>
+  <app-login-form></app-login-form>
+  <div class="mt-6 text-center text-sm text-gray-600">
+    ¿No tienes cuenta?
+    <a href="#contact" class="font-semibold text-primary hover:underline">
+      Contáctanos
+    </a>
+  </div>
+</p-dialog>

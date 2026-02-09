@@ -1,0 +1,106 @@
+:host {
+  display: block;
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.page-shell {
+  padding: 32px 24px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-top: 48px;
+  padding: 36px;
+  border-radius: 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(31, 138, 157, 0.12),
+    rgba(11, 60, 93, 0.08)
+  );
+  display: grid;
+  gap: 24px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--color-muted);
+}
+
+.hero-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.step-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(11, 60, 93, 0.08);
+}
+
+.step-card span {
+  font-size: 0.85rem;
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.timeline {
+  margin-top: 56px;
+}
+
+.timeline h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.timeline-grid article {
+  padding: 20px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 10px 24px rgba(11, 60, 93, 0.06);
+}
+
+.cta {
+  margin-top: 56px;
+  padding: 28px;
+  border-radius: 22px;
+  background: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-link {
+  text-decoration: none;
+  background: white;
+  color: var(--color-primary);
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 28px;
+  }
+}

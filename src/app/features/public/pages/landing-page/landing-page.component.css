@@ -1,0 +1,126 @@
+:host {
+  display: block;
+}
+
+/* Variables de color personalizadas */
+:host {
+  --primary: #0b3c5d;
+  --secondary: #1f8a9d;
+  --background: #f3f6f8;
+  --accent: #2ec4b6;
+  --foreground: #1f2937;
+  --muted: #6b7280;
+}
+
+/* Estilos para enlaces de navegación */
+.nav-link {
+  @apply text-gray-700 font-medium transition-colors duration-200 relative;
+}
+
+.nav-link:hover {
+  @apply text-primary;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+/* Estilos para enlaces del footer */
+.footer-link {
+  @apply text-gray-400 hover:text-white transition-colors duration-200;
+}
+
+/* Animaciones personalizadas */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Estilos para el modal de login */
+::ng-deep .login-dialog .p-dialog-header {
+  @apply bg-gradient-to-r from-primary to-secondary text-white;
+}
+
+::ng-deep .login-dialog .p-dialog-title {
+  @apply font-bold text-lg;
+}
+
+::ng-deep .login-dialog .p-dialog-content {
+  @apply p-6;
+}
+
+/* Efectos de glass morphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Sombras personalizadas */
+.shadow-glow {
+  box-shadow: 0 10px 40px rgba(11, 60, 93, 0.1);
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Gradientes personalizados */
+.app-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--background) 0%,
+    white 50%,
+    var(--background) 100%
+  );
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-visual {
+    order: -1;
+  }
+}
+
+/* Estilos para secciones impares */
+section:nth-child(odd) {
+  background-color: rgba(243, 246, 248, 0.5);
+}
+
+/* Transiciones suaves */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Mejoras de scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 9999px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}

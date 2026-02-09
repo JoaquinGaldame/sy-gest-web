@@ -21,7 +21,7 @@ import * as AuthActions from '../../../core/state/auth/auth.actions';
   template: `
     <form [formGroup]="form" (ngSubmit)="submit()" class="space-y-4">
       <div>
-        <label for="login-email" class="text-sm font-semibold text-foreground"
+        <label for="login-email" class="text-md font-semibold text-foreground"
           >Email</label
         >
         <input
@@ -30,14 +30,14 @@ import * as AuthActions from '../../../core/state/auth/auth.actions';
           type="email"
           formControlName="email"
           class="mt-2 w-full"
-          placeholder="tu@email.com"
+          placeholder="Ingrese su correo electrónico"
         />
       </div>
 
       <div>
         <label
           for="login-password"
-          class="text-sm font-semibold text-foreground"
+          class="text-md font-semibold text-foreground"
           >Contraseña</label
         >
         <p-password
@@ -47,7 +47,7 @@ import * as AuthActions from '../../../core/state/auth/auth.actions';
           [toggleMask]="true"
           styleClass="mt-2 w-full"
           inputStyleClass="w-full"
-          placeholder="••••••••"
+          placeholder="Ingrese su contraseña"
         ></p-password>
       </div>
 

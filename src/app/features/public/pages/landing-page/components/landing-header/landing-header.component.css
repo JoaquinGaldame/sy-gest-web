@@ -1,0 +1,46 @@
+:host {
+  display: block;
+}
+
+.landing-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(11, 60, 93, 0.08);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.logo-img {
+  height: 24px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+}
+
+.nav-link {
+  @apply text-gray-700 font-medium transition-colors duration-200 relative;
+}
+
+.nav-link:hover {
+  @apply text-primary;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.nav-link.is-active::after {
+  @apply w-full;
+}
