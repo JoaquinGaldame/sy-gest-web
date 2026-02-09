@@ -20,7 +20,7 @@ module.exports = tseslint.config(
     },
     processor: angular.processInlineTemplates,
     rules: {
-      "prettier/prettier": "warn",
+      "prettier/prettier": "off",
       "@angular-eslint/directive-selector": [
         "error",
         {
@@ -50,7 +50,7 @@ module.exports = tseslint.config(
       prettier,
     },
     rules: {
-      "prettier/prettier": "warn",
+      "prettier/prettier": "off",
     },
   }
 );
